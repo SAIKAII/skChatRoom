@@ -13,7 +13,7 @@ Server::Server(){
     epollfd = 0;
 }
 
-void Server::Init(){
+void Server::init(){
     std::cout << "Init server ... \n";
 
     listenfd = socket(PF_INET, SOCK_STREAM, 0);
@@ -45,7 +45,7 @@ void Server::Init(){
 
 }
 
-void Server::close(){
+void Server::close_desc(){
     close(listenfd);
     close(epollfd);
 }

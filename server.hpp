@@ -7,9 +7,9 @@ namespace skChatRoom{
     class Server{
     public:
         Server();
-        void Init();
+        void init();
         void start();
-        void close();
+        void close_desc();
 
     private:
         //广播信息
